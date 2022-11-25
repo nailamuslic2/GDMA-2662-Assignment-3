@@ -25,7 +25,7 @@
 *,
 *:after,
 *:before {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'EB Garamond', serif;
     -o-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -38,15 +38,11 @@ html {
 }
 
 @media only screen and (min-width: 768px) {
-    html {
-        font-size: 17px;
-     }
+    
 }
 
 @media only screen and (min-width: 1024px) {
-    html {
-        font-size: 17px;
-     }
+    
 }
 
 /*--------------------------------------------------------------

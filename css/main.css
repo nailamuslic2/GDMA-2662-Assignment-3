@@ -6,14 +6,18 @@
 3.0 - Generic: reset and/or normalize styles, box-sizing definition, etc. (boxsetting, html selector, body selector)
         - Universal
 4.0 - Elements: styling for bare/generic HTML elements (just h1, etc, p, ul,) (make subsections for tables and forms, etc) (no classes or IDs, but you can use direct descendant and first child as long as no classes etc) (img would have the media subhead; Headings, Paragraphs, Blockquotes, Anchors, table, form, image, content)
-        - Typography
+        - Home
+        - About
+        - Take Action
 5.0 - Objects: class-based selectors which define undecorated design patterns, building blocks (classes and IDs)
         - Framework
+        - Small Display
+        - Medium Display
+        - Large Display
 6.0 - Components: specific designed components (modular widgets that visually look the same but have one difference)
 
 7.0 - Utilities
         - Alignment
-        - Screen reader
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -25,7 +29,6 @@
 *,
 *:after,
 *:before {
-    font-family: 'EB Garamond', serif;
     -o-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -34,7 +37,8 @@
 }
 
 html {
-    font-size: 1rem;
+    text-align: center;
+    font: 1rem 'EB Garamond', serif;
 }
 
 @media only screen and (min-width: 768px) {
@@ -49,6 +53,14 @@ html {
     4.0 - ELEMENTS
 -------------------------------------------------------------- */
 
+/*a {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}*/
+
 @media only screen and (min-width: 768px) {
 
 }
@@ -57,9 +69,41 @@ html {
     
 }
 
-/* ----- TYPOGRAPHY ----- */
+/* ----- HOME ----- */
 
 
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 1024px) {
+    
+}
+
+/* ----- ABOUT ----- */
+
+
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 1024px) {
+    
+}
+
+/* ----- TAKE ACTION ----- */
+
+
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 1024px) {
+    
+}
 
 /*--------------------------------------------------------------
     5.0 - OBJECTS
@@ -267,6 +311,75 @@ html {
     background-clip: content-box;
 }*/
 
+/* ----- HOME ----- */
+
+/*#bg-mountain {
+    background: url(../img/bg-mountain.jpg) no-repeat center;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+#bg-mountain div div div {
+    margin: 0 auto;
+}
+
+#bg-mountain li {
+    list-style-type: none;
+}
+
+#bg-mountain li {
+    display: inline-block;
+    margin: 0rem .8rem;
+    padding: .25rem .5rem;
+    border-radius: 1rem;
+}
+
+#bg-mountain a:hover {
+    color: #4D9374;
+    background-color:#fff;
+    padding: .25rem .5rem;
+    border-radius: 1rem;
+    margin: 0rem .8rem;
+}
+
+#bg-mountain ul {
+    padding-left: 0;
+}*/
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 1024px) {
+    
+}
+
+/* ----- ABOUT ----- */
+
+
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 1024px) {
+    
+}
+
+/* ----- TAKE ACTION ----- */
+
+
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 1024px) {
+    
+}
 
 /*--------------------------------------------------------------
     7.0 - UTILITIES
@@ -276,17 +389,4 @@ html {
 
 .col-center {
     justify-content: center;
-}
-
-/* ----- SCREEN READER ----- */
-
-.sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
 }

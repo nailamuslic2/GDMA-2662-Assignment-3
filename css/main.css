@@ -39,7 +39,8 @@
 
 html {
     text-align: center;
-    font: 1rem 'EB Garamond', serif;
+    font: 1rem 2em 'EB Garamond', serif;
+    color: #1F1F1F;
 }
 
 @media only screen and (min-width: 768px) {
@@ -54,12 +55,51 @@ html {
     4.0 - ELEMENTS
 -------------------------------------------------------------- */
 
-h1 {
-    margin-bottom: 0.25em;
+header nav a,
+h2,
+main a {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
 }
 
-header div div div {
-    margin: 0 auto;
+header nav a,
+main a {
+    font-weight: 600;
+}
+
+@media only screen and (min-width: 768px) {
+
+    
+}
+
+@media only screen and (min-width: 1024px) {
+
+
+
+}
+
+/* ----- TYPOGRAPHY ----- */
+
+main p {
+    font-size: 1.56rem;
+    line-height: 1.8em;
+    margin-top: 0;
+}
+
+main a {
+    color: #fff;
+    background-color: #4D9374;
+    border-radius: 2rem;
+    padding: .6rem 1.25rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+h2 {
+    color: #BDBDBD;
+    font-size: 1.4rem;
+    letter-spacing: .25em;
+    font-weight: 700;
 }
 
 header ul {
@@ -69,15 +109,13 @@ header ul {
 
 header li {
     display: inline-block;
-    padding: 0rem 1rem;
+    padding: 0rem .9rem;
+    font-size: 1.25rem;
 }
 
 header nav a {
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
     color: #fff;
     text-decoration: none;
-    font-weight: 600;
 }
 
 header nav li:last-of-type a {
@@ -86,6 +124,7 @@ header nav li:last-of-type a {
     border-radius: 2rem;
     padding: .6rem 1.25rem;
 }
+
 
 @media only screen and (min-width: 768px) {
 
@@ -98,19 +137,6 @@ header nav li:last-of-type a {
         border-radius: 2rem;
         padding: .5rem;
     }
-}
-
-@media only screen and (min-width: 1024px) {
-
-
-
-}
-
-/* ----- TYPOGRAPHY ----- */
-
-
-@media only screen and (min-width: 768px) {
-
 }
 
 @media only screen and (min-width: 1024px) {
@@ -324,16 +350,17 @@ header nav li:last-of-type a {
     -ms-background-size: cover;
     -webkit-background-size: cover;
     background-size: cover;
-    padding-bottom: 7.5em;
-    margin-bottom: 3.5em;
+    padding-bottom: 9em;
+    margin-bottom: 6em;
 }
 
 #bg-mountain div div div {
     padding: 0em;
+    margin-top: 1em;
 }
 
 #bg-mountain ul {
-    margin-bottom: 2.5em;
+    margin-bottom: 4em;
 }
 
 #bg-mountain p {
@@ -343,14 +370,14 @@ header nav li:last-of-type a {
 }
 
 #bg-mountain p:first-of-type {
-    font-size: 2.5rem;
+    font-size: 2.75rem;
     font-weight: 700;
-    line-height: 1.2em;
+    line-height: 1.25em;
     margin-bottom: 0.5em;
 }
 
 #bg-mountain span {
-    font: italic 2.25rem 'EB Garamond', serif; 
+    font: italic 2.5rem 'EB Garamond', serif; 
     display: block;
     text-transform: lowercase;
 }
@@ -361,40 +388,78 @@ header nav li:last-of-type a {
     font-weight: 600;
     background-color: #4D9374;
     border-radius: 2rem;
-    padding: .6rem 1.25rem;
+    padding: .7rem 1.25rem;
+    font-size: 1.25rem;
+}
+
+#bg-mountain h1 {
+    margin-bottom: 0.25em;
 }
 
 
 @media only screen and (min-width: 768px) {
 
+
+
 }
 
 @media only screen and (min-width: 1024px) {
     
+
+
 }
 
 /* ----- MAIN ----- */
 
 #home-page div:first-of-type p {
-    font-size: 1.5rem;
-    line-height: 1.8em;
+    font-size: 1.49rem;
+    line-height: 1.7em;
+    margin-bottom: 4em;
 }
 
 #home-page > p {
-    font-size: 1.75rem;
-    line-height: 1.35em;
-    margin-bottom: 0em;
+    font-size: 2rem;
+    line-height: 1.5em;
+    margin: 0;
+}
+
+#home-page .row section {
+    padding: 0;
 }
 
 #home-page .row section:first-child div {
     background: url(../img/bg-hiker.jpg) no-repeat center;
+}
+
+#home-page .row section:last-child div {
+    background: url(../img/bg-forest-trail.jpg) no-repeat center;
+}
+
+#home-page .row section:first-child div,
+#home-page .row section:last-child div {
     -o-background-size: cover;
     -moz-background-size: cover;
     -ms-background-size: cover;
     -webkit-background-size: cover;
     background-size: cover;
-    height: 20em;
+    background-clip: content-box;
+    height: 24em;
+    width: 100%;
 }
+
+#home-page h2 {
+    margin: 1.5em 0 .5em;
+}
+
+#home-page h2 + p {
+    padding-top: 0em;
+}
+
+#home-page .row section p:last-child {
+    padding-bottom: 3em;
+}
+
+
 
 @media only screen and (min-width: 768px) {
 
@@ -406,7 +471,48 @@ header nav li:last-of-type a {
 
 /* ----- FOOTER ----- */
 
+body > footer {
+    background-color: #1D6E4A;
+    padding-bottom: 1em;
+    text-align: center;
+    margin-top: 2em;
+}
 
+footer ul {
+    padding-left: 0;
+}
+
+footer div > ul li {
+    display: inline-block;
+}
+
+footer > div {
+    background-color: #4D9374;
+}
+
+footer span {
+    font-size: 1.5rem ;
+    color: #fff;
+    padding: .75em .5rem;
+}
+
+address ul {
+    font-style: normal;
+    padding-top: 1em;
+}
+
+address a {
+    font: 1.2rem 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    line-height: 2.75em;
+}
+
+address li {
+    list-style-type: none;
+    text-transform: uppercase;
+}
 
 @media only screen and (min-width: 768px) {
 
@@ -424,6 +530,10 @@ header nav li:last-of-type a {
 
 .col-center {
     justify-content: center;
+}
+
+header div div div {
+    margin: 0 auto;
 }
 
 /* ----- SCREEN READER ----- */

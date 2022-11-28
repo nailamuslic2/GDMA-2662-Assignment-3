@@ -340,6 +340,35 @@ header nav li:last-of-type a {
     6.0 - COMPONENTS
 -------------------------------------------------------------- */
 
+#bg-mountain div div div,
+#bg-hiker div div div {
+    padding: 0em;
+}
+
+#bg-mountain ul,
+#bg-hiker ul {
+    margin-bottom: 4.5em;
+    margin-top: .25em;
+}
+
+#bg-mountain p,
+#bg-hiker h1 {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase; 
+}
+
+#bg-mountain p:first-of-type,
+#bg-hiker h1 {
+    font-size: 2.75rem;
+    font-weight: 700;
+    line-height: 1.25em;
+}
+
+#mission,
+#about-page div section p:last-child {
+    text-align:left;
+}
 
 /* ----- HEADER ----- */
 
@@ -354,25 +383,12 @@ header nav li:last-of-type a {
     margin-bottom: 6em;
 }
 
-#bg-mountain div div div {
-    padding: 0em;
+#bg-mountain h1 {
+    margin-bottom: .25em;
     margin-top: 1em;
 }
 
-#bg-mountain ul {
-    margin-bottom: 4em;
-}
-
-#bg-mountain p {
-    color: #fff;
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase; 
-}
-
 #bg-mountain p:first-of-type {
-    font-size: 2.75rem;
-    font-weight: 700;
-    line-height: 1.25em;
     margin-bottom: 0.5em;
 }
 
@@ -392,8 +408,19 @@ header nav li:last-of-type a {
     font-size: 1.25rem;
 }
 
-#bg-mountain h1 {
-    margin-bottom: 0.25em;
+#bg-hiker {
+    background: url(../img/bg-hiker.jpg) no-repeat center;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding-bottom: 6em;
+}
+
+#bg-hiker div div div {
+    margin-top: 1.25em;
+    margin-bottom: .75em;
 }
 
 
@@ -459,6 +486,84 @@ header nav li:last-of-type a {
     padding-bottom: 3em;
 }
 
+#about-page {
+    text-align: center;
+}
+
+#about-page ul {
+    padding-left: 0;
+    margin: 1.5em 0em;
+}
+
+#about-page nav li {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: .5rem;
+}
+
+#about-page nav li:first-of-type {
+    display: block;
+    color: #4D9374;
+    font: 1.25rem 'EB Garamond', sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+#about-page nav a {
+    color: #BDBDBD;
+    background-color: transparent;
+    padding: 0;
+}
+
+#what-we-do {
+    font-size: 1.8rem;
+    line-height: 1.5em;
+    margin-top: .5em;
+    margin-bottom: 3em;
+}
+
+blockquote {
+    border-top: .1em solid #BDBDBD;
+    border-bottom: .1em solid #BDBDBD;
+    margin: 0 auto;
+}
+
+blockquote > p:first-child {
+    font: 5.45rem 'Montserrat', sans-serif;
+    color: #BDBDBD; 
+    margin: .75em 0 0;
+    font-weight: 500;
+    line-height: .3em;
+}
+
+blockquote > p:last-child {
+    margin-top: 0em;
+    line-height: 2em;
+}
+
+blockquote footer p {
+    font: 1.15rem 'Montserrat', sans-serif;
+    color: #BDBDBD;
+    font-weight: 600; 
+    line-height: 1em;
+    margin-bottom: 2.5em;
+}
+
+#about-page div section p:last-child {
+    margin-bottom: 2em;
+}
+
+#achievements {
+    margin-top: 6em;
+    text-align: left;
+}
+
+#achievements li {
+    font-size: 1.5rem;
+    line-height: 1.8em;
+    list-style: disc url(../img/icon-tree.jpg) inside;
+}
 
 
 @media only screen and (min-width: 768px) {

@@ -39,8 +39,9 @@
 
 html {
     text-align: center;
-    font: 1rem 2em 'EB Garamond', serif;
+    font: 1.56rem 'EB Garamond', serif;
     color: #1F1F1F;
+    line-height: 1.8em;
 }
 
 @media only screen and (min-width: 768px) {
@@ -55,74 +56,36 @@ html {
     4.0 - ELEMENTS
 -------------------------------------------------------------- */
 
-header nav a,
-h2,
-main a {
+/* ----- TYPOGRAPHY ----- */
+
+a,
+h2 {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
 }
 
-header nav a,
-main a {
+a {
     font-weight: 600;
-}
-
-@media only screen and (min-width: 768px) {
-
-    
-}
-
-@media only screen and (min-width: 1024px) {
-
-
-
-}
-
-/* ----- TYPOGRAPHY ----- */
-
-main p {
-    font-size: 1.56rem;
-    line-height: 1.8em;
-    margin-top: 0;
-}
-
-main a {
-    color: #fff;
-    background-color: #4D9374;
-    border-radius: 2rem;
-    padding: .6rem 1.25rem;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: .8rem;
 }
 
 h2 {
     color: #BDBDBD;
-    font-size: 1.4rem;
-    letter-spacing: .25em;
+    letter-spacing: .25rem;
     font-weight: 700;
+    font-size: 1rem;
+    line-height: 0em;
+    margin-top: 2em;
 }
 
-header ul {
+ul {
     padding-left: 0;
-    margin-top: 0;
 }
 
-header li {
-    display: inline-block;
-    padding: 0rem .9rem;
-    font-size: 1.25rem;
-}
-
-header nav a {
+header,
+a {
     color: #fff;
-    text-decoration: none;
-}
-
-header nav li:last-of-type a {
-    color: #4D9374;
-    background-color: #fff;
-    border-radius: 2rem;
-    padding: .6rem 1.25rem;
 }
 
 
@@ -340,201 +303,166 @@ header nav li:last-of-type a {
     6.0 - COMPONENTS
 -------------------------------------------------------------- */
 
-#bg-mountain div div div,
-#bg-hiker div div div {
-    padding: 0em;
+/* ----- NAVIGATION ----- */
+
+nav li {
+    display: inline-block;
+    margin: 0 .5em;
 }
 
-#bg-mountain ul,
-#bg-hiker ul {
-    margin-bottom: 4.5em;
-    margin-top: .25em;
+header ul {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
-#bg-mountain p,
-#bg-hiker h1 {
-    color: #fff;
+header li:last-child a {
+    color: #4D9374;
+    background-color: #fff;
+    border-radius: 2rem;
+    -o-border-radius: 2em;
+    -moz-border-radius: 2em;;
+    -ms-border-radius: 2em;
+    -webkit-border-radius: 2em;
+    padding: .5em 1rem;
+}
+
+main nav li {
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0 .5rem;
+}
+
+main nav li:first-child {
+    display: block;
+    color: #4D9374;
+    font: .85rem 'EB Garamond', serif;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 2em;
+}
+
+main nav a {
+    color: #BDBDBD;
+}
+
+/* ----- LOGO ----- */
+
+header div div div {
+    margin: 0 auto;
+}
+
+header h1 {
+    margin: 0em 0rem;
+}
+
+/* ----- HEADER TEXT ----- */
+
+.hero {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase; 
-}
-
-#bg-mountain p:first-of-type,
-#bg-hiker h1 {
-    font-size: 2.75rem;
+    font-size: 1.85rem;
     font-weight: 700;
-    line-height: 1.25em;
+    line-height: 1em;
+    margin-top: 2em;
+    margin-bottom: 0;
 }
 
-#mission,
-#about-page div section p:last-child {
-    text-align:left;
-}
-
-/* ----- HEADER ----- */
-
-#bg-mountain {
-    background: url(../img/bg-mountain.jpg) no-repeat bottom;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -ms-background-size: cover;
-    -webkit-background-size: cover;
-    background-size: cover;
-    padding-bottom: 9em;
-    margin-bottom: 6em;
-}
-
-#bg-mountain h1 {
-    margin-bottom: .25em;
-    margin-top: 1em;
-}
-
-#bg-mountain p:first-of-type {
-    margin-bottom: 0.5em;
-}
-
-#bg-mountain span {
-    font: italic 2.5rem 'EB Garamond', serif; 
+.hero span {
+    font: italic 2rem 'EB Garamond', serif; 
     display: block;
     text-transform: lowercase;
 }
 
-#bg-mountain p:last-of-type a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 600;
-    background-color: #4D9374;
-    border-radius: 2rem;
-    padding: .7rem 1.25rem;
-    font-size: 1.25rem;
+/* ----- HERO IMG ----- */
+
+#bg-mountain {
+    background: url(../img/bg-mountain.jpg) no-repeat bottom;
+    margin-bottom: 4em;
 }
 
 #bg-hiker {
     background: url(../img/bg-hiker.jpg) no-repeat center;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -ms-background-size: cover;
-    -webkit-background-size: cover;
-    background-size: cover;
-    padding-bottom: 6em;
 }
 
-#bg-hiker div div div {
-    margin-top: 1.25em;
-    margin-bottom: .75em;
-}
-
-
-@media only screen and (min-width: 768px) {
-
-
-
-}
-
-@media only screen and (min-width: 1024px) {
-    
-
-
-}
-
-/* ----- MAIN ----- */
-
-#home-page div:first-of-type p {
-    font-size: 1.49rem;
-    line-height: 1.7em;
-    margin-bottom: 4em;
-}
-
-#home-page > p {
-    font-size: 2rem;
-    line-height: 1.5em;
-    margin: 0;
-}
-
-#home-page .row section {
-    padding: 0;
-}
-
-#home-page .row section:first-child div {
-    background: url(../img/bg-hiker.jpg) no-repeat center;
-}
-
-#home-page .row section:last-child div {
+#bg-forest-trail {
     background: url(../img/bg-forest-trail.jpg) no-repeat center;
 }
 
-#home-page .row section:first-child div,
-#home-page .row section:last-child div {
+#bg-mountain,
+#bg-hiker,
+#bg-forest-trail {
     -o-background-size: cover;
     -moz-background-size: cover;
     -ms-background-size: cover;
     -webkit-background-size: cover;
     background-size: cover;
-    background-clip: content-box;
-    height: 24em;
-    width: 100%;
+    padding: .5em 0 5em;
 }
 
-#home-page h2 {
-    margin: 1.5em 0 .5em;
+/* ----- INTRO TEXT ----- */
+
+.intro {
+    font-size: 1.3rem;
 }
 
-#home-page h2 + p {
-    padding-top: 0em;
-}
-
-#home-page .row section p:last-child {
-    padding-bottom: 3em;
-}
-
-#about-page {
-    text-align: center;
-}
-
-#about-page ul {
-    padding-left: 0;
-    margin: 1.5em 0em;
-}
-
-#about-page nav li {
-    display: inline-block;
-    font-size: 1rem;
-    font-weight: 600;
-    margin: .5rem;
-}
-
-#about-page nav li:first-of-type {
-    display: block;
-    color: #4D9374;
-    font: 1.25rem 'EB Garamond', sans-serif;
-    font-weight: 600;
-    font-style: italic;
-}
-
-#about-page nav a {
-    color: #BDBDBD;
-    background-color: transparent;
-    padding: 0;
+.col-lg-8 > p {
+    font-size: 1.05rem;
+    line-height: 1.7em;
+    margin-top: 0;
 }
 
 #what-we-do {
-    font-size: 1.8rem;
-    line-height: 1.5em;
-    margin-top: .5em;
+    margin-top: 0;
     margin-bottom: 3em;
 }
+
+/* ----- BUTTONS ----- */
+
+.button {
+    background-color: #4D9374;
+    border-radius: 2rem;
+    -o-border-radius: 2em;
+    -moz-border-radius: 2em;;
+    -ms-border-radius: 2em;
+    -webkit-border-radius: 2em;
+    padding: .5em 1rem;
+}
+
+/* ----- COLUMNS ----- */
+
+.columns div {
+    -o-background-size: contain;
+    -moz-background-size: contain;
+    -ms-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-clip: content-box;
+    padding: 6em 0em;
+}
+
+.columns:first-child div {
+    background: url(../img/bg-hiker.jpg) no-repeat center;
+}
+
+.columns:last-child div {
+    background: url(../img/bg-forest-trail.jpg) no-repeat center;
+}
+
+
+/* ----- BLOCKQUOTE ----- */
 
 blockquote {
     border-top: .1em solid #BDBDBD;
     border-bottom: .1em solid #BDBDBD;
     margin: 0 auto;
+    margin-top: 3em;
 }
 
 blockquote > p:first-child {
-    font: 5.45rem 'Montserrat', sans-serif;
+    font: 3.5rem 'Montserrat', sans-serif;
     color: #BDBDBD; 
-    margin: .75em 0 0;
+    margin: 0 0 0;
     font-weight: 500;
-    line-height: .3em;
 }
 
 blockquote > p:last-child {
@@ -543,36 +471,26 @@ blockquote > p:last-child {
 }
 
 blockquote footer p {
-    font: 1.15rem 'Montserrat', sans-serif;
-    color: #BDBDBD;
-    font-weight: 600; 
-    line-height: 1em;
+    font: .8rem 'Montserrat', sans-serif;
+    color: #BDBDBD; 
+    line-height: 1.5em;
     margin-bottom: 2.5em;
+    font-weight: 500;
 }
 
-#about-page div section p:last-child {
-    margin-bottom: 2em;
-}
+/* ----- MISSION ----- */
 
-#achievements {
-    margin-top: 6em;
+#mission,
+#mission + p {
     text-align: left;
 }
 
-#achievements li {
-    font-size: 1.5rem;
-    line-height: 1.8em;
-    list-style: disc url(../img/icon-tree.jpg) inside;
+#mission + p {
+    font-size: 1rem;
+    line-height: 1.7em;
 }
 
-
-@media only screen and (min-width: 768px) {
-
-}
-
-@media only screen and (min-width: 1024px) {
-    
-}
+/* ----- ACHIEVEMENTS ----- */
 
 /* ----- FOOTER ----- */
 
@@ -580,7 +498,11 @@ body > footer {
     background-color: #1D6E4A;
     padding-bottom: 1em;
     text-align: center;
-    margin-top: 2em;
+    margin-top: 3em;
+}
+
+footer > div {
+    background-color: #4D9374;
 }
 
 footer ul {
@@ -591,33 +513,52 @@ footer div > ul li {
     display: inline-block;
 }
 
-footer > div {
-    background-color: #4D9374;
-}
-
 footer span {
-    font-size: 1.5rem ;
-    color: #fff;
-    padding: .75em .5rem;
+    font-size: 1rem ;
+    margin: .75em .5rem;
 }
 
 address ul {
     font-style: normal;
-    padding-top: 1em;
-}
-
-address a {
-    font: 1.2rem 'Montserrat', sans-serif;
-    text-decoration: none;
-    color: #fff;
-    font-weight: 600;
-    line-height: 2.75em;
+    margin-top: 1.5em;
 }
 
 address li {
-    list-style-type: none;
-    text-transform: uppercase;
+    line-height: 2.em;
 }
+
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 1024px) {
+    
+}
+
+
+/*
+
+
+
+
+}
+
+#about-page div section p:last-child {
+    margin-bottom: 2em;
+}
+
+#achievements {
+    margin-top: 6em;
+}
+
+#achievements li {
+    font-size: 1.5rem;
+    line-height: 1.8em;
+    list-style: disc url(../img/icon-tree.jpg) inside;
+}*/
+
+
 
 @media only screen and (min-width: 768px) {
 
@@ -637,17 +578,12 @@ address li {
     justify-content: center;
 }
 
-header div div div {
-    margin: 0 auto;
-}
-
 /* ----- SCREEN READER ----- */
 
 .sr-only {
     position: absolute;
     width: 1px;
     height: 1px;
-    padding: 0;
     margin: -1px;
     overflow: hidden;
     clip: rect(0, 0, 0, 0);

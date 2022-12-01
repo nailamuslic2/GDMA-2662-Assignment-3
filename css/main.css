@@ -20,14 +20,13 @@
         - Intro text
         - Buttons
         - Columns
-        - Blockquote
         - Mission
+        - Blockquote
         - Achievements
         - Footer
 7.0 - Utilities
         - Alignment
         - Screen reader
-        - Margin Bottom
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -104,12 +103,6 @@ h2 {
 
 ul {
     padding-left: 0;
-}
-
-@media only screen and (min-width: 768px) {
-
-    
-
 }
 
 @media only screen and (min-width: 1024px) {
@@ -319,7 +312,8 @@ ul {
 
 /* ----- NAVIGATION ----- */
 
-main nav li:first-child {
+main nav li:first-child,
+header li:last-child a {
     color: #4D9374;
 }
 
@@ -384,20 +378,8 @@ main nav ul {
 
 @media only screen and (min-width: 768px) {
 
-}
-
-@media only screen and (min-width: 1024px) {
-
     header nav {
         text-align: right;
-    }
-    
-    header li:last-child a {
-        color: #fff;
-    }
-
-    header nav li {
-        margin-left: .6rem;
     }
 
     header li:last-child a {
@@ -411,6 +393,21 @@ main nav ul {
         border: .1rem solid #fff;
     }
 
+    header li:last-child a {
+        color: #fff;
+    }
+
+    header nav a:hover {
+        text-decoration: underline;
+        text-underline-offset: 40%;
+    }
+
+    header nav li:last-child a:hover {
+        text-decoration: none;
+        background-color: #fff;
+        color: #4D9374;
+    }
+
     header .col-md-9 {
         padding: 0;
         line-height: 2rem;
@@ -420,15 +417,17 @@ main nav ul {
         margin-bottom: 1em;
     }
 
-    header nav a:hover {
-        text-decoration: underline;
-        text-underline-offset: 15%;
+    main nav a:hover {
+        color: #4D9374;
     }
 
-    header nav li:last-child a:hover {
-        text-decoration: none;
-        background-color: #fff;
-        color: #4D9374;
+}
+
+@media only screen and (min-width: 1024px) {
+
+
+    header nav li {
+        margin-left: .6rem;
     }
 
     main nav li {
@@ -437,8 +436,8 @@ main nav ul {
         line-height: 2em;
     }
 
-    main nav a:hover {
-        color: #4D9374;
+    main nav {
+        align-self: flex-start;
     }
 
 
@@ -453,10 +452,6 @@ header .col-sm-5 {
 
 @media only screen and (min-width: 768px) {
 
-}
-
-@media only screen and (min-width: 1024px) {
-    
     header .col-lg-2 {
         text-align: left;
         padding-top: 0em;
@@ -484,6 +479,14 @@ h1 {
 
 @media only screen and (min-width: 768px) {
 
+    #bg-mountain p,
+    h1 {
+        font-size: 3rem;
+        line-height: 1em;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
 }
 
 @media only screen and (min-width: 1024px) {
@@ -508,6 +511,10 @@ h1 {
 
     #bg-hiker h1 {
         font-size: 5rem;
+        line-height: 3em;
+    }
+
+    #bg-forest-trail h1 {
         line-height: 3em;
     }
 }
@@ -538,10 +545,6 @@ h1 {
     padding: 1em 0 5.5em;
 }
 
-@media only screen and (min-width: 768px) {
-
-}
-
 @media only screen and (min-width: 1024px) {
     
     #bg-mountain {
@@ -553,12 +556,6 @@ h1 {
         background: url(../img/bg-hiker.jpg) no-repeat center;
         margin-bottom: 4em;
     }
-    
-    /*
-    
-    #bg-forest-trail {
-        background: url(../img/bg-forest-trail.jpg) no-repeat bottom;
-    }*/
     
     #bg-mountain,
     #bg-hiker,
@@ -601,6 +598,20 @@ h1 {
 
 @media only screen and (min-width: 768px) {
 
+    .intro + div {
+        margin: 0 auto;
+    }
+
+    main .col-md-8,
+    main .col-md-10 {
+        margin: 0 auto;
+        margin-bottom: 2em;
+    }
+
+    #what-we-do .intro {
+        text-align: left;
+    }
+
 }
 
 @media only screen and (min-width: 1024px) {
@@ -609,20 +620,14 @@ h1 {
         font-size: 1.8rem;
     }
     
-    .intro + div {
-        margin: 0 auto;
-    }
-    
     #what-we-do .intro {
         margin-top: 0em;
     }
 
-
-    /*
-    
-    .col-md-7 .intro {
-        margin-bottom: 0.5em;
-    }*/
+    main .col-md-8,
+    main .col-md-10 {
+        margin-bottom: 5em;
+    }
 
 }
 
@@ -636,10 +641,6 @@ h1 {
     -ms-border-radius: 2em;
     -webkit-border-radius: 2em;
     padding: .5em .6rem;
-}
-
-@media only screen and (min-width: 768px) {
-
 }
 
 @media only screen and (min-width: 1024px) {
@@ -687,6 +688,14 @@ div#bg-forest-trail {
 
 @media only screen and (min-width: 768px) {
 
+    main .col-md-9 {
+        margin: 0 auto;
+    }
+
+    main .col-md-9:last-child {
+        margin-bottom: 3em;
+    }
+
 }
 
 @media only screen and (min-width: 1024px) {
@@ -696,24 +705,6 @@ div#bg-forest-trail {
         padding: 8em;
         margin: 5em 1rem 0;
     }
-    
-    /*.row .col-md-6 h2 {
-        margin-top: 1.25em;
-    }
-    
-    .col-md-9 p:first-of-type,
-    .col-md-6 > p {
-        margin-top: 0;
-    }
-    
-    .col-md-6 {
-        padding-top: 0;
-        margin-bottom: .5em;
-    }
-    
-    .col-md-9:last-child p:last-child {
-        margin-bottom: 0;
-    }*/
 
 }
 
@@ -730,14 +721,6 @@ div#bg-forest-trail {
 
 #mission + p {
     margin-top: 0;
-}
-
-@media only screen and (min-width: 768px) {
-
-}
-
-@media only screen and (min-width: 1024px) {
-    
 }
 
 
@@ -770,12 +753,20 @@ blockquote footer p {
     margin-bottom: 2.5em;
 }
 
-@media only screen and (min-width: 768px) {
-
-}
-
 @media only screen and (min-width: 1024px) {
-    
+
+    blockquote > p:last-of-type {
+        font-size: 1.25rem;
+        line-height: 1.5em;
+    }
+
+    blockquote > p:first-child {
+        font-size: 6rem;
+    }
+
+    blockquote footer p {
+        font-size: .8rem;
+    }
 }
 
 /* ----- ACHIEVEMENTS ----- */
@@ -815,19 +806,20 @@ blockquote footer p {
     background-size: contain;
 }
 
-@media only screen and (min-width: 768px) {
-
-}
-
 @media only screen and (min-width: 1024px) {
-    
+
+    #achievements li {
+        margin-left: 1rem;
+        margin-bottom: .5em;
+    }
+
 }
 
 /* ----- FOOTER ----- */
 
 body > footer {
     background-color: #1D6E4A;
-    padding-bottom: 7.5em;
+    padding-bottom: 1em;
     margin-top: 3em;
 }
 
@@ -860,6 +852,19 @@ address li {
 
 @media only screen and (min-width: 768px) {
 
+    address li {
+        font-size: 2rem;
+        line-height: 0em;
+        display: inline-block;
+        padding: .5em 0;
+        margin: .5em 1rem 0;
+    }
+
+    address a:hover {
+        text-decoration: underline;
+        text-underline-offset: 40%;
+    }
+
 }
 
 @media only screen and (min-width: 1024px) {
@@ -874,19 +879,6 @@ address li {
         margin: 1em .4rem;
     }
     
-    address ul {
-        font-style: normal;
-    }
-    
-    address li {
-        font-size: 2rem;
-        line-height: 0em;
-        display: inline-block;
-        padding: .5em 0;
-        margin: .5em .25rem 0;
-    }
-    
-
 }
 
 
